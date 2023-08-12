@@ -1,0 +1,8 @@
+#Число размещений без повторений A^k (n) и число сочетаний без повторений C^k (n) могут быть найдены соответственно по формулам A^k (n) = n! / (n−k)! и C^k (n) = n! / k!*(n−k)!. Напишите программу для нахождения данных величин при известных n и k.
+
+import math
+n = 10
+k = 5
+A^k (n) = math.factorial(n) / math.factorial(n-k)
+C^k (n) = math.factorial(n) / (math.factorial(k) * math.factorial(n-k))
+print(A, C)
