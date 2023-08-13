@@ -3,6 +3,6 @@
 import math
 n = 10
 k = 5
-A^k (n) = math.factorial(n) / math.factorial(n-k)
-C^k (n) = math.factorial(n) / (math.factorial(k) * math.factorial(n-k))
+A = int(math.factorial(n) / math.factorial(n-k))
+C = int(math.factorial(n) / (math.factorial(k) * math.factorial(n-k)))
 print(A, C)
