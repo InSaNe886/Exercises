@@ -7,8 +7,9 @@ def square(n):
     count = 0
     for i in range(1, n * 2, 2):
         count += i
-        if count ==  n ** 2:
-            return count
+        if not None:
+            continue
+    return count
 
 for i in range(1, 10001):
     print(square(i))
@@ -16,5 +17,17 @@ for i in range(1, 10001):
 
 #Куб любого натурального числа n равен сумме n нечетных чисел, следующих по порядку за числами, сумма которых составила куб числа n−1. С помощью этого факта составьте таблицу кубов натуральных чисел от 1 до 100.
 
-Пока не разобрался как учесть условие "сумма которых составила куб числа n−1".
+def qubeTabl(n):
+    posl_nechetnoe = 1
+    for i in range(1, n + 1):
+        summa_cub = 0
+        for j in range(i):
+            summa_cub += posl_nechetnoe
+            posl_nechetnoe += 2
+        print(str(i) + " " + str(summa_cub))
+
+
+print(qubeTabl(100))
+
+
 
